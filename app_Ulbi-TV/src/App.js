@@ -35,7 +35,7 @@ const App = () => {
                 isLoading
             }
         }>
-            <HashRouter>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <Navbar/>
 
                 <AppRouter/>
