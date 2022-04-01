@@ -3,7 +3,7 @@ import  "./styles/App.css";
 import {
     BrowserRouter as Router,
     Routes,
-    Route, Link, Navigate,
+    Route, Link, Navigate, HashRouter,
 } from "react-router-dom";
 import About from "./pages/About";
 import Posts from "./pages/posts";
@@ -35,11 +35,11 @@ const App = () => {
                 isLoading
             }
         }>
-            <Router>
+            <HashRouter>
                 <Navbar/>
 
                 <AppRouter/>
-            </Router>
+            </HashRouter>
         </AuthContext.Provider>
     )
 
