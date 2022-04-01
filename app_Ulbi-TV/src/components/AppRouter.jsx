@@ -1,9 +1,5 @@
 import React, {useContext} from 'react';
 import {Navigate, Route, Routes} from "react-router-dom";
-import About from "../pages/About";
-import Posts from "../pages/posts";
-import Errors from "../pages/Errors";
-import PostIdPages from "../pages/PostIdPages";
 import {privateRoutes, publicRoutes} from "../router/routes";
 import {AuthContext} from "../context";
 import Loader from "./UI/Loader/Loader";
