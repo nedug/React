@@ -3,7 +3,7 @@ import  "./styles/App.css";
 import {
     BrowserRouter as Router,
     Routes,
-    Route, Link, Navigate, HashRouter,
+    Route, Link, Navigate,
 } from "react-router-dom";
 import About from "./pages/About";
 import Posts from "./pages/posts";
@@ -35,11 +35,11 @@ const App = () => {
                 isLoading
             }
         }>
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <Router>
                 <Navbar/>
 
                 <AppRouter/>
-            </HashRouter>
+            </Router>
         </AuthContext.Provider>
     )
 
